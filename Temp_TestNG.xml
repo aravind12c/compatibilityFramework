@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Desktop_Chrome">
+  <test thread-count="5" name="WIN">
+    <parameter name="Devicetype" value="Desktop"/>
+    <parameter name="Testtype" value="Desktop_Chrome"/>
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="DeviceName" value="WIN"/>
+    <classes>
+      <class name="com.vodafone.Framework.TestPack">
+        <methods>
+          <include name="Validation">
+            <parameter name="TestCaseID" value=",TC_038,TC_042,TC_046"/>
+            <parameter name="TestType" value="Desktop_Chrome"/>
+            <parameter name="Scenario" value=",Personal_Homepage,Personal_Arabic_Homepage,Personal_Devices"/>
+          </include> <!-- Validation -->
+        </methods>
+      </class> <!-- com.vodafone.Framework.TestPack -->
+    </classes>
+  </test> <!-- WIN -->
+</suite> <!-- Desktop_Chrome -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Desktop_Firefox">
+  <test thread-count="5" name="WIN">
+    <parameter name="Devicetype" value="Desktop"/>
+    <parameter name="Testtype" value="Desktop_Firefox"/>
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="DeviceName" value="WIN"/>
+    <classes>
+      <class name="com.vodafone.Framework.TestPack">
+        <methods>
+          <include name="Validation">
+            <parameter name="TestCaseID" value=",TC_038,TC_042,TC_046"/>
+            <parameter name="TestType" value="Desktop_Firefox"/>
+            <parameter name="Scenario" value=",Personal_Homepage,Personal_Arabic_Homepage,Personal_Devices"/>
+          </include> <!-- Validation -->
+        </methods>
+      </class> <!-- com.vodafone.Framework.TestPack -->
+    </classes>
+  </test> <!-- WIN -->
+</suite> <!-- Desktop_Firefox -->
